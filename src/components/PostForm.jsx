@@ -8,12 +8,12 @@ export const PostForm = ({ create }) => {
 
   const addPost = (e) => {
     e.preventDefault();
-    setPost({ title: "", body: "" });
+    setPost({ title: "", body: "" });         
     const newPost = {
       ...post,
       id: Date.now(),
     };
-    create(newPost); 
+    create(newPost);  
   };
 
 

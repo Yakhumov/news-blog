@@ -8,11 +8,11 @@
     background: rgba(0,0,0, 0.5);   
 }
 
-.MyModalContent{ 
-    padding: 15px;
+.myModalContent{ 
+    padding: 35px;
     border-radius: 16px;
     background: white;
-    min-width: 250px;
+    min-width: 250px; 
 }  
 
 

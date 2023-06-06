@@ -4,12 +4,14 @@ import { MySelect } from "./Ui/Select/MySelect"
 export const PostFilter = ({filter, setFilter}) => {
  
   return (
-    <div className="select">   
+    <div className="inputSearch">   
     <MyInput
       value={filter.query}
       onChange={(e) => setFilter({...filter, query:  e.target.value})}  
       placeholder="Поиск..."
     ></MyInput>
+    <div className="select">
+
     <MySelect
       value={filter.sort}
       onChange={selectedSort => setFilter({...filter, sort: selectedSort})}  
@@ -19,6 +21,7 @@ export const PostFilter = ({filter, setFilter}) => {
         { value: "body", name: "По описанию " },
       ]}
     ></MySelect>
+    </div>
   </div>
   )
 }
