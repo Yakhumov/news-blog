@@ -29,3 +29,21 @@ hr{
   }
 
 
+  .pages-wrapper{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+
+  .pages{
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;   
+  }
+
+  .page-current{
+    border: 2px solid greenyellow;
+    font-weight: bold;  
+  }
+
+
