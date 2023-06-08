@@ -1,7 +1,8 @@
 import React from 'react'
 import MyButton from './Ui/Button/MyButton'
+import { Link } from 'react-router-dom' 
 
-export const PostItem = (props) => {
+export const PostItem = (props) => {   
   return (
     <div className='post'>
     <div className='post-content'>
@@ -11,8 +12,11 @@ export const PostItem = (props) => {
       </div>
     </div>
     <div className='post-btns'>
-     <MyButton onClick={()=> props.remove(props.post)} >   Удалить </MyButton>     
-    </div>
+     <MyButton onClick={()=> props.remove(props.post)} >   Удалить </MyButton>   
+     <Link  to={`/posts/${props.post.id}`} >     
+     <MyButton onClick={()=> props.remove(props.post)} >   Открыть  </MyButton>  
+     </Link> 
+    </div>   
   </div>
   )
 }

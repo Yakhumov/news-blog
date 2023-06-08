@@ -6,7 +6,8 @@
 
 #root{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App{
@@ -21,3 +22,24 @@
   border: 2px solid teal;
   align-items: center;
 }
+
+.post-btns{
+    display: flex;
+}
+
+.navbar{
+    width: 100vw;
+    height: 50px;
+    padding: 0 15px ;
+    display: flex;
+    align-items: center;
+    background: lightgray;
+  }
+
+
+  .navbar_item{
+    margin-left: auto;
+  }
+
+ 
+

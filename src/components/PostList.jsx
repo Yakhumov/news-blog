@@ -2,7 +2,7 @@ import React from 'react';
 import { PostItem } from './PostItem';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-export const PostList = ({ posts, title, remove }) => {
+ const PostList = ({ posts, title, remove }) => {
   if (!posts.length) {
     return <h1 style={{ textAlign: "center" }}>Посты не найдены</h1>;
   }
@@ -24,3 +24,5 @@ export const PostList = ({ posts, title, remove }) => {
     </>
   );
 };
+
+export default PostList
