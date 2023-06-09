@@ -1,4 +1,4 @@
-import { About } from "../pages/About"
+import About from "../pages/About"
 import Posts from "../pages/Posts"
 import PostByIdPage from "../components/PostByIdPage"
 import Login from "../pages/Login"
